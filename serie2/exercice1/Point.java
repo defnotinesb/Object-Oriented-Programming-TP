@@ -7,7 +7,7 @@ public class Point {
         y = initialY;
     }
 
-
+//exercice 1
     void moveTo(int newX, int newY){
         x = newX;
         y = newY;
@@ -17,9 +17,10 @@ public class Point {
         System.out.println("Point:("+x+","+y+")");
     }    
 
+
 //main
     public static void main(String[] args){
-        Point p = new Point(3,5);
+        Point p = new Point(3,4);
         p.display();
         p.moveTo(5,7);
 
