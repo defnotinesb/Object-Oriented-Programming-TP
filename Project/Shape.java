@@ -2,7 +2,7 @@ public abstract class Shape {
 
     public abstract double area();
 
-    public abstract double premiter();
+    public abstract double primeter();
 
 
 }

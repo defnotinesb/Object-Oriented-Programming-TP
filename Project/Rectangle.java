@@ -1,4 +1,4 @@
-public class Rectangle implements Drawable extends Shape{
+public class Rectangle extends Shape implements Drawable {
     private double length;
     private double width;
 
@@ -23,18 +23,18 @@ public class Rectangle implements Drawable extends Shape{
         this.width = width;
     }
 
-    @override
+    @Override
     public double area(){
         return length * width;
     }
 
-    @override
-    public double premiter(){
+    @Override
+    public double primeter(){
         return (length + width)* 2;
     }
 
-    @override
+    @Override
     public void draw(){
-        system.out.println("Drawing a rectangle");
+        System.out.println("Drawing a rectangle");
     }
 }

@@ -20,26 +20,26 @@ public class Triangle extends Shape implements Drawable{
     public double getBase() { return base; }
     public double getHeight() { return height; }
 
-    public double setSide1() { this.side1 = side1; }
-    public double setSide2() { this.side2 = side2; }
-    public double setSide3() { this.side3 = side3; }
-    public double setBase() { this.base = base; }
-    public double setHeight() { this.height = height; }
+    public void setSide1(double side1) { this.side1 = side1; }
+    public void setSide2(double side2) { this.side2 = side2; }
+    public void setSide3(double side3) { this.side3 = side3; }
+    public void setBase(double base) { this.base = base; }
+    public void setHeight(double height) { this.height = height; }
 
 
-    @override
+    @Override
     public void draw(){
-        system.out.println("Drawing a triangle");
+        System.out.println("Drawing a triangle");
     }
 
     
-    @override
+    @Override
     public double area(){
         return base * height * 0.5;
     }
 
-    @override
-    public double premiter(){
+    @Override
+    public double primeter(){
         return side1 + side2 + side3;
     }
 }

@@ -1,5 +1,5 @@
 public interface Drawable {
     default void draw(){
-        system.out.println("Drawing a shape");
+        System.out.println("Drawing a shape");
     }
 }
