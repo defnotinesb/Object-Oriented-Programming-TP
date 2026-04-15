@@ -33,4 +33,9 @@ public class Rectangle extends Shape {
     public double perimeter(){
         return (width + height) * 2;
     }
+
+    @Override
+    public void draw(){
+        System.out.println("Drawing a rectangle");
+    }
 }

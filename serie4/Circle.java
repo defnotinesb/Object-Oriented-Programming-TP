@@ -23,4 +23,8 @@ public class Circle extends Shape {
     public double perimeter(){
         return radius * 2 * Math.PI;
     }
+
+    @Override void draw(){
+        System.out.println("Drawing a circle");
+    }
 }
