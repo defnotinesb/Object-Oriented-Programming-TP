@@ -1,4 +1,4 @@
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
     double side1;
     double side2;
     double side3;
@@ -35,5 +35,8 @@ public class Triangle extends Shape {
         return side1 + side2 + side3;
     }
 
-    @
+    @Override
+    public void draw(){
+        System.out.println("Drawing a triangle");
+    }
 }

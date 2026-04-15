@@ -1,4 +1,4 @@
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private double radius;
 
     public Circle(double radius){
@@ -24,7 +24,8 @@ public class Circle extends Shape {
         return radius * 2 * Math.PI;
     }
 
-    @Override void draw(){
+    @Override 
+    public void draw(){
         System.out.println("Drawing a circle");
     }
 }
