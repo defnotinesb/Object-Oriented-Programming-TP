@@ -7,10 +7,10 @@ public class TryDivision {
 
 
         try {
-            int nominator = scanner.nextInt();
-            int denominator = scanner.nextInt();
+            double nominator = scanner.nextInt();
+            double denominator = scanner.nextInt();
 
-            int result = nominator/denominator;
+            double result = nominator/denominator;
 
             System.out.println(nominator + " / " + denominator + " = " + result);
         } catch (ArithmeticException e) {
